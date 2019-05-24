@@ -1,0 +1,14 @@
+message GpsTraj{
+    repeated TrajPoint point = 1;
+}
+
+message TrajPoint{
+    required int32 car_id = 1;
+    required uint32 timestamp = 2;
+    required int32 lon = 3;
+    required int32 lat = 4;
+    required int32 head = 5;
+    required int32 speed = 6;
+    required float x = 7;
+    required float y = 8;
+}
