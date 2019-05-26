@@ -16,7 +16,7 @@ In this tutorial we will use a set of artificial GPS trajectories located at `da
 
 ### Configuration file
 
-Algorithm parameters are set in a configuration file `GPStudio/parameters.ini`. While it lists many parameters, in most cases only a few need to be tuned (which will be discuss later). 
+Algorithm parameters are set in a configuration file `GPStudio/parameters.ini`. While it lists many parameters, in most cases only a few need to be tuned (which will be discussed later). 
 
 We are also including a sample configuration file `GPStudio/parameters_beijing_taxi.ini` for some of the Beijing taxi data used in the paper. It should be adjusted depending on map size, street density, number of trajectories and the magnitude of GPS noise.
 
@@ -40,7 +40,7 @@ The GUI allows interactive control of different steps of the algorithm. Inside t
 ```
 bin/GPStudio
 ```
-You can adjust parameters on the fly using the Parameter editor (Hover the mouse over the **>>** sign on the right side of the toolbar, then click **Open Parameter Editor**. Press Ctrl-S or click **Update Paramters** to save changes after editing. 
+You can adjust parameters on the fly using the Parameter Editor. Hover mouse over the **>>** sign on the right side of the toolbar, then click **Open Parameter Editor** to view and edit parameter configurations. Press Ctrl-S or click **Update Paramters** to save changes after editing. 
 
 To start, double click on the empty canvas and select **Open GPS Trajectories**. Open the sample PBF file `../data/traj_pbf/region5C-large.trace-ss20-n5.pbf`.
 
