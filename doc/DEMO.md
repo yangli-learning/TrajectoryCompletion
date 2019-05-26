@@ -44,7 +44,7 @@ You can adjust parameters on the fly using the Parameter editor (Hover the mouse
 
 To start, double click on the empty canvas and select **Open GPS Trajectories**. Open the sample PBF file `../data/traj_pbf/region5C-large.trace-ss20-n5.pbf`.
 
-![opentrajectories](/home/yang/git/GPStudio-cleanup/doc/opentrajectories.png)
+![opentrajectories](opentrajectories.png)
 
 
 ### Select Bounding Box
@@ -54,7 +54,7 @@ Use mouse scrolling to zoom, hold the middle mouse button and drag to pan the vi
 
 Next click **Vote Map Image** on the menu bar to generate a grayscale *map image* of the selected region. 
 
-![mapimage](/home/yang/git/GPStudio-cleanup/doc/mapimage.png)
+![map image](mapimage.png)
 
 Trajectory points and the map image can be toggled on and off using **Toggle Traj Points** and **Toggle Map Image**.
 
@@ -68,7 +68,7 @@ Useful parameters (defined in `GPStudio/parameters.ini`):
 ### Extract skeleton 
 First, click "initialize L1 Medial Skeleton" to generate skeleton points based on the density of the map image. 
 
-![initialize](/home/yang/git/GPStudio-cleanup/doc/initialize.png)
+![initialize](initialize.png)
 
 Useful parameter:
 
@@ -76,17 +76,17 @@ Useful parameter:
 
 Clicking **>** once will perform one step of the L1 medial skeleton extraction iteration.   e.g. After 3-4 steps, points outside the junction will contract to a single line. 
 
-![skeleton_extraction](/home/yang/git/GPStudio-cleanup/doc/skeleton_extraction.png)
+![skeleton_extraction](skeleton_extraction.png)
 
 Click **Extract Skeleton** to trace skeleton segments. 
 
-![skeleton_branches](/home/yang/git/GPStudio-cleanup/doc/skeleton_branches.png)
+![skeleton_branches](skeleton_branches.png)
 
 For complex maps, you need to repeat **Extract Skeleton** multiple times to extract all skeleton branches.  Clicking on a skeleton point while holding Ctrl-Shift it will display the current support size of the selected point, and visualize the local variance in the lowerleft window.  You may also use **+** to increase the local support size (h) of each skeleton point if the skeleton points converge too slowly. 
 
 Click **Compute Graph** to compute the final skeleton graph.
 
-![skeleton_extraction](/home/yang/git/GPStudio-cleanup/doc/skeleton_graph.png)
+![skeleton_extraction](skeleton_graph.png)
 
 Useful parameters:
 
@@ -97,7 +97,7 @@ Useful parameters:
 
 Once the desirable skeleton graph is computed, use **Cluster junction trajectories** to compute flow clusters (trajectory segments grouped by traffic directions) . The detected clusters are shown inside the top left panel. In this example, a total of 12 clusters are discovered, with checkboxes that control the visibility of individual clusters. You can also filter the clusters by size using the slider. 
 
-![flow_clusters](/home/yang/git/GPStudio-cleanup/doc/flowclusters.png)
+![flow_clusters](flowclusters.png)
 
 Useful parameters:
 
@@ -107,7 +107,7 @@ Useful parameters:
 
 After clusters are computed, click **Algorithm > Complete Trajectories** to generate dense trajectories. This process may take some time. Once completed, you can visualize the completion results of a specific trajectory by entering its id and click **Show Dense Trajectory**. For example, the image below shows the completed trajectory #400. Yellow arrows are the original GPS samples of the sparse trajectory. Red arrows are the added samples.
 
-![completion](/home/yang/git/GPStudio-cleanup/doc/completion.png)
+![completion](completion.png)
 
 Command line mode
 -----------------------------
