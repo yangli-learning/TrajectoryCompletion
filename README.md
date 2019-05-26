@@ -1,6 +1,6 @@
 GPStudio
 ========
-Repository for paper *Knowledge-Based Trajectory Completion from Sparse GPS Samples*, by Yang Li, Yangyan Li, Dimitrios Gunopulos, and Leonidas Guibas, published in Proceedings of ACM SIGSPATIAL 2016.
+Source code and demo for paper *Knowledge-Based Trajectory Completion from Sparse GPS Samples*, by Yang Li, Yangyan Li, Dimitrios Gunopulos, and Leonidas Guibas, published in Proceedings of ACM SIGSPATIAL 2016.
 
 
 Requirements and Dependencies
@@ -64,7 +64,7 @@ bin/GPStudio --interactive=false --trace_fname=<gps_data> --bbox_fname=<bound_bo
 ```
 Alternatively, use `guiless.sh` to invoke GPStudio and process output.
 
-See `doc/DEMO.md` for the tutorial.
+See [doc/DEMO.md](doc/DEMO.md) for the tutorial.
 
 Known issues
 ------------
